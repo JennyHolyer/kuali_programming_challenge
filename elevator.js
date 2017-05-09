@@ -55,3 +55,5 @@ function occupied () {
 function unoccupied () {
  //check elevator is occupied, push to unoccupied[]
 }
+
+// need to set up an eventListener for when the call is made
