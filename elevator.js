@@ -48,6 +48,10 @@ function needMaintainance(){
     // with trips = 100, push it to an occupied[]
 }
 
-function occupied(){
+function occupied () {
+ //check elevator is occupied, push to occupied[]
+}
 
+function unoccupied () {
+ //check elevator is occupied, push to unoccupied[]
 }
