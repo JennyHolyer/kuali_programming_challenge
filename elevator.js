@@ -11,11 +11,11 @@ function ElevatorConstructor(maxFloor, minFloor, elevName, currentFloor, destina
     this.minFloor = minFloor || 1; //if not specify set val = 1
     this.maxFloor = maxFloor || 3; //if not specify set val = 3
 
-    this.vacancy = function(){
-        if(vacancy = 0){
-            vacancy = true;
+    this.occupied = function(){
+        if(occupied = 0){
+            occupied = true;
         } else {
-            vacancy = false;
+            occupied = false;
         }
     }
     this.direction = function(currentFloor, destination){
@@ -39,4 +39,15 @@ function ElevatorConstructor(maxFloor, minFloor, elevName, currentFloor, destina
             console.log(currentFloor, "I moved from floor to floor");
         }
     } //end of movement method
+
 } //end of constructor
+
+
+function needMaintainance(){
+    // use 'for loop' and keep count of each trip.
+    // with trips = 100, push it to an occupied[]
+}
+
+function occupied(){
+
+}
