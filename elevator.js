@@ -31,3 +31,12 @@ function ElevatorConstructor(maxFloor, minFloor, elevName, currentFloor, destina
     this.destination = function(minFloor, maxFloor){
         destination = destination > minFloor && destination < maxFloor;
     }
+    // Each elevator will report as is moves from floor to floor.
+    this.movement = function(departureFloor, destination ){
+        var distance = destination - departureFloor;
+
+        if (distance > 0){
+            console.log(currentFloor, "I moved from floor to floor");
+        }
+    } //end of movement method
+} //end of constructor
